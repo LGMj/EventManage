@@ -30,6 +30,7 @@ void handleData(DataType data) {
 void handleCommand(void) {
     printf("Handle command\n");
     printf("Get 103 cmd\n");
+    PostEvent(ALL_LED_OFF);
 }
 
 void ledOn(void) {
