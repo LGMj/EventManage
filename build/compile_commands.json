@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9   -g   -Wall -g -o CMakeFiles/main.dir/main.o   -c \"/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/main.c\"",
+  "file": "/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/main.c"
+},
+{
+  "directory": "/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9   -g   -Wall -g -o CMakeFiles/main.dir/event_manager.o   -c \"/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_manager.c\"",
+  "file": "/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_manager.c"
+},
+{
+  "directory": "/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9   -g   -Wall -g -o CMakeFiles/main.dir/event_test.o   -c \"/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_test.c\"",
+  "file": "/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_test.c"
+},
+{
+  "directory": "/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/build",
+  "command": "/bin/x86_64-linux-gnu-gcc-9   -g   -Wall -g -o CMakeFiles/main.dir/led.o   -c \"/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/led.c\"",
+  "file": "/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/led.c"
+}
+]

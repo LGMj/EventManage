@@ -1,0 +1,62 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event.h
+
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_manager.c
+event_manager.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_manager.h
+stdio.h
+-
+stdlib.h
+-
+event_test.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_test.h
+
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_manager.h
+stdbool.h
+-
+event.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event.h
+
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_test.c
+event_test.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_test.h
+stdio.h
+-
+
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_test.h
+stdint.h
+-
+event_manager.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_manager.h
+
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/led.c
+led.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/led.h
+stdio.h
+-
+
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/led.h
+event_manager.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_manager.h
+
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/main.c
+stdio.h
+-
+event_manager.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_manager.h
+event_test.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/event_test.h
+stdlib.h
+-
+string.h
+-
+led.h
+/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/led.h
+
