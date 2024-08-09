@@ -1,3 +1,0 @@
-/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/build/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/LGM/OneDrive - jqmoon/project/EventManage/build/CMakeFiles/main.dir

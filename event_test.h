@@ -8,11 +8,8 @@ typedef struct ArrayData_ {
     uint8_t data[0];
 } ArrayData;
 
-void test_init(void);
 void handleData(DataType data);
 void handleCommand(void);
-void ledOn(void);
-void ledOff(void);
 
 #endif
 

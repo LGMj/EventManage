@@ -1,7 +1,15 @@
 #include "event_manager.h"
 #include <stdio.h>
+#include <stdint.h>
 #include <stdlib.h>
-#include "event_test.h"
+
+const char* eventString[] = {
+
+#define EVENT(event) #event,
+    EVENT_LIST
+#undef EVENT
+
+};
 
 typedef struct handleFuncNode_t {
     HandleFunc_t handleFunc;
@@ -86,7 +94,7 @@ void PostEventWithData(Event event, DataType data) {
     if(event >= MAX_EVENT)
         return;
 
-    printf("EM: event: %d\n", event);    
+    printf("EM_Event: %s\n", eventString[event]);    
     handleEventAndData(event, data);
 }
 

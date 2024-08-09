@@ -14,6 +14,11 @@ typedef struct LED_COLOR_ {
     COLOR color;
 } LED_COLOR;
 
-void ledInit(void); 
+void redLedOn(void);
+void greenLedOn(void);
+void BlueLedOn(void);
+void allLedOff(void);
+void ledOn(COLOR color);
+void handleLedOn(DataType data);
 
 #endif

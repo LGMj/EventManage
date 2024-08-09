@@ -1,1 +1,0 @@
-/bin/x86_64-linux-gnu-gcc-9 -g  -rdynamic CMakeFiles/main.dir/main.o CMakeFiles/main.dir/event_manager.o CMakeFiles/main.dir/event_test.o CMakeFiles/main.dir/led.o  -o main 
