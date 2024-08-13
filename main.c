@@ -7,13 +7,13 @@
 
 int main(void) {
     HandleFunc_t handleFunctions[] = {
-        {HAVE_DATA_TO_HANDLE,    HANDLE_DATA_FUNC(handleData)},
-        {HAVE_DATA_TO_HANDLE,    NO_DATA_FUNC(allLedOff)},
-        {HAVE_COMMAND_TO_HANDLE, NO_DATA_FUNC(handleCommand)},
-        {HAVE_COMMAND_TO_HANDLE, NO_DATA_FUNC(allLedOff)},
-        {TEST_EVENT,             HANDLE_DATA_FUNC(handleData)},
-        {LED_COLOR_ON,           HANDLE_DATA_FUNC(handleLedOn)},
-        {ALL_LED_OFF,            NO_DATA_FUNC(allLedOff)}
+        {evHaveDataToHandle,    HANDLE_DATA_FUNC(handleData)},
+        {evHaveDataToHandle,    NO_DATA_FUNC(allLedOff)},
+        {evHaveCommandToHandle, NO_DATA_FUNC(handleCommand)},
+        {evHaveCommandToHandle, NO_DATA_FUNC(allLedOff)},
+        {evTestEvent,             HANDLE_DATA_FUNC(handleData)},
+        {evLedColorOn,           HANDLE_DATA_FUNC(handleLedOn)},
+        {evAllLedOff,            NO_DATA_FUNC(allLedOff)}
     };
 
     RegisterHandleFunctions(handleFunctions);
@@ -23,14 +23,14 @@ int main(void) {
     data->data_size = NUM_OF_ARRAY(buff);
     memcpy(data->data, buff, NUM_OF_ARRAY(buff));
     
-    PostEvent(HAVE_DATA_TO_HANDLE, data);
-    PostEvent(HAVE_COMMAND_TO_HANDLE);
-    PostEvent(TEST_EVENT);
+    PostEvent(evHaveDataToHandle, data);
+    PostEvent(evHaveCommandToHandle);
+    PostEvent(evTestEvent);
     free(data);
 
     LED_COLOR led_color = {RED};
-    PostEvent(LED_COLOR_ON, &led_color);
-    PostEvent(ALL_LED_OFF, NULL);
+    PostEvent(evLedColorOn, &led_color);
+    PostEvent(evAllLedOff, NULL);
     
     return 0;
 }

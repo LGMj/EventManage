@@ -28,7 +28,7 @@ static void createEventHandles(HandleFuncList_t *handleListArray) {
 
 static void addHandleFuncToList(HandleFuncList_t L, HandleFunc_t *handleFunc) {
     if(handleFunc == NULL) {
-        printf("handleFunc is NULL\n");
+        EM_LOG_ERROR("handleFunc is NULL\n");
         return;
     }
 
@@ -51,7 +51,7 @@ static void addHandleFuncToList(HandleFuncList_t L, HandleFunc_t *handleFunc) {
 
 void registerHandleFunctions(HandleFunc_t *handleFuncs, int funNum) {
     if(handleFuncs == NULL) {
-        printf("handleFuncs is NULL\n");
+        EM_LOG_ERROR("handleFuncs is NULL\n");
         return;
     }
 
@@ -59,7 +59,7 @@ void registerHandleFunctions(HandleFunc_t *handleFuncs, int funNum) {
     
     static uint8_t i=0;
     if(i == 0) {
-        printf("EventHandles init\n");
+        EM_LOG_INFO("EventHandles init\n");
         createEventHandles(EventHandles);
         i = 1;
     }
@@ -76,7 +76,7 @@ void registerHandleFunctions(HandleFunc_t *handleFuncs, int funNum) {
 static void handleEventAndData(Event event, DataType data) {
     HandleFuncList_t funcList = EventHandles[event];
     if(funcList == NULL) {
-        printf("FuncList is NULL\n");
+        EM_LOG_ERROR("FuncList is NULL\n");
         return;
     }
 
@@ -94,6 +94,6 @@ void PostEventWithData(Event event, DataType data) {
     if(event >= MAX_EVENT)
         return;
 
-    printf("EM_Event: %s\n", eventString[event]);
+    EM_LOG_EVENT(event);
     handleEventAndData(event, data);
 }
