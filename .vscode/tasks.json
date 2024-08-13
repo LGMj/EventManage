@@ -1,6 +1,6 @@
 {
     "options": {
-        "cwd": "${workspaceFolder}/build"
+        "cwd": "${workspaceFolder}/out"
     },
     "tasks": [
         {
@@ -15,12 +15,12 @@
             "label": "make",
             "command": "make",
             "group": {
-                "kind": "build",
+                "kind": "out",
                 "isDefault": true
             }
         },
         {
-            "label": "Build",
+            "label": "out",
             "dependsOn":[
                 "cmake",
                 "make"

@@ -23,14 +23,14 @@ int main(void) {
     data->data_size = NUM_OF_ARRAY(buff);
     memcpy(data->data, buff, NUM_OF_ARRAY(buff));
     
-    PostEventWithData(HAVE_DATA_TO_HANDLE, data);
+    PostEvent(HAVE_DATA_TO_HANDLE, data);
     PostEvent(HAVE_COMMAND_TO_HANDLE);
     PostEvent(TEST_EVENT);
     free(data);
 
     LED_COLOR led_color = {RED};
-    PostEventWithData(LED_COLOR_ON, &led_color);
-    PostEvent(ALL_LED_OFF);
+    PostEvent(LED_COLOR_ON, &led_color);
+    PostEvent(ALL_LED_OFF, NULL);
     
     return 0;
 }
